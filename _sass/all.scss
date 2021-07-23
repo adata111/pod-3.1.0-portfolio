@@ -82,6 +82,16 @@ body {
   background-color: #f5f5f9;
 }
 
+.github-stats{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  img{
+  margin: 50px 10px 0 10px;
+  }
+}
+
 h2 {
   margin-bottom: 20px;
   margin-top: 20px;
@@ -134,7 +144,7 @@ a {
   padding: 10px;
 
   img {
-    width: 100%;
+    max-width: 100%;
   }
 }
 .project > .content {
@@ -293,4 +303,11 @@ a {
   visibility: hidden;
   transform:translateY(-100%);
   transition: all .3s 1s ease-out;
+}
+
+
+@media screen and (max-width: 400px) {
+    img.git_stats{
+      max-width: 100%;
+    }
 }
